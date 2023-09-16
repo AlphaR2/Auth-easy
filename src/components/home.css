@@ -51,11 +51,11 @@
 .container-main p {
   font-size: 25px;
   font-weight: bold;
-  color: #c0baba; 
+  color: #a29e9e; 
 }
 /* Styles for the modal content */
 .modal {
-  background-color: #b6d0de;
+  background-color: #5c6b73;
   position: absolute;
   margin-top: 290px;
   left: 550px;
@@ -150,9 +150,11 @@
   }
 
   .modal {
-    left: 50px;
-    max-width: 250px;
-    height: 300px;
+   background-color:#c0baba;
+    left: 30px;
+    max-width: 280px;
+    top: 90px;
+    height: 200px;
     padding: 20px;
   }
   .modal .modal-close-button {
@@ -180,7 +182,7 @@
   }
 
   .modal-content h2 {
-    font-size: 24px;
+    font-size: 20px;
 
   }
 }

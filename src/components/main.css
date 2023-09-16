@@ -57,8 +57,10 @@
 @media screen and (max-width: 500px) {
   .nav-logged {
     position: absolute;
+    right:90px;
     top: 149px;
     font-size: 20px;
+    margin-right:99px;
   }
 
   .card-out {
@@ -70,4 +72,5 @@
     width: 100px;
     height: 40px;
   }
+  
 }
