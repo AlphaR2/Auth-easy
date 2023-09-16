@@ -93,6 +93,7 @@ const Auth = () => {
                 enable: true,
                 priority: 1,
                 mandatory: true,
+                originData: { [origin]: sig },
               },
               backUpShareFactor: {
                 enable: true,
