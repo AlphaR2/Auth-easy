@@ -46,15 +46,16 @@
 
 .container-main h1 {
   font-size: 35px;
-  color: rgb(162, 158, 158);
+  color: #a29e9e;
 }
 .container-main p {
   font-size: 25px;
   font-weight: bold;
+  color: #c0baba; 
 }
 /* Styles for the modal content */
 .modal {
-  background-color: #5c6b73;
+  background-color: #b6d0de;
   position: absolute;
   margin-top: 290px;
   left: 550px;
@@ -149,7 +150,7 @@
   }
 
   .modal {
-    left: 90px;
+    left: 50px;
     max-width: 250px;
     height: 300px;
     padding: 20px;

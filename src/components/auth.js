@@ -19,7 +19,7 @@ import Main from "./main";
 import Home from "./home";
 
 const clientId =
-  "BMlR-zIS_NDi6khlkx3S6Lkb-cATBhdS-srB7yHwUkY1WTHF0v3mRQ64nOcN05_88nDizTx0vwTtmIdIhiGnxCE";
+  "BHIaCF-BCxt3wGdhZA8zp3WwrG06pDLdrm70OdVcVMrzAAH5rP3ktPk0o3h8FQNHoyW2Yfji-iRXskrIvcHXNxU";
 
 const Auth = () => {
   const [web3auth, setWeb3auth] = useState(null);
@@ -242,7 +242,7 @@ const Auth = () => {
 
   const unloggedInView = (
     <div className="unlogged">
-      <Home  login = {login}/>
+      <Home login={login} />
     </div>
   );
 
