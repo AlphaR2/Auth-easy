@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { GiAbstract062 } from "react-icons/gi";
-import mainImage from "../images/home2.jpg";
+import mainImage from "../images/main.jpg";
 import "./main.css";
 
 const Main = ({
