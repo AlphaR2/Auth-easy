@@ -20,11 +20,11 @@ import Main from "./main";
 import Home from "./home";
 
 const clientId =
-  "BHIaCF-BCxt3wGdhZA8zp3WwrG06pDLdrm70OdVcVMrzAAH5rP3ktPk0o3h8FQNHoyW2Yfji-iRXskrIvcHXNxU";
+  "BAnOQIywAbQlezx8oeg0uZzXhgGtqB-347AbVxcxgB4sZc9yetPlloWSa-aVClaZt79SggfOMhrNK5wQ__ARJqA";
 
 const clientSecret =
-  "4c00a4803c2b2ca2f69ea9074a94de7edcf823f3cf1d3ca2a6307fce4453eb67";
-  const origin = "https://auth-easy.vercel.app/";
+  "831d18b19857dcd0879d156c9468b0634935281931a38c7d00220d2cec6dc02b";
+const origin = "https://auth-easy.vercel.app/";
 const Auth = () => {
   const [web3auth, setWeb3auth] = useState(null);
   const [provider, setProvider] = useState(null);
