@@ -12,6 +12,7 @@ import { SolanaWalletConnectorPlugin } from "@web3auth/solana-wallet-connector-p
 import { SolflareAdapter } from "@web3auth/solflare-adapter";
 import { SlopeAdapter } from "@web3auth/slope-adapter";
 import { OpenloginAdapter } from "@web3auth/openlogin-adapter";
+import { whitelistUrl } from "@toruslabs/openlogin";
 import { SolanaWalletAdapter } from "@web3auth/torus-solana-adapter";
 import { SolanaPrivateKeyProvider } from "@web3auth/solana-provider";
 
@@ -21,6 +22,9 @@ import Home from "./home";
 const clientId =
   "BHIaCF-BCxt3wGdhZA8zp3WwrG06pDLdrm70OdVcVMrzAAH5rP3ktPk0o3h8FQNHoyW2Yfji-iRXskrIvcHXNxU";
 
+const clientSecret =
+  "4c00a4803c2b2ca2f69ea9074a94de7edcf823f3cf1d3ca2a6307fce4453eb67";
+  const origin = "https://auth-easy.vercel.app/";
 const Auth = () => {
   const [web3auth, setWeb3auth] = useState(null);
   const [provider, setProvider] = useState(null);
@@ -49,6 +53,8 @@ const Auth = () => {
         const privateKeyProvider = new SolanaPrivateKeyProvider({
           config: { chainConfig },
         });
+
+        const sig = await whitelistUrl(clientId, clientSecret, origin);
 
         const torusPlugin = new SolanaWalletConnectorPlugin({
           torusWalletOpts: {
@@ -93,7 +99,6 @@ const Auth = () => {
                 enable: true,
                 priority: 1,
                 mandatory: true,
-                originData: { [origin]: sig },
               },
               backUpShareFactor: {
                 enable: true,
@@ -109,6 +114,9 @@ const Auth = () => {
                 enable: true,
                 priority: 4,
                 mandatory: false,
+              },
+              originData: {
+                [origin]: sig,
               },
             },
           },
